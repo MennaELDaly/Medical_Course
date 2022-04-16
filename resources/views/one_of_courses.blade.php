@@ -151,7 +151,7 @@
                         <div class="card mb-3">
                             <div class="row g-0">
                                 <div class="col-md-4">
-                                    <img src="/images/d1.jpg" class="img-fluid rounded-circle">
+                                    <img src="/images/d1.jpeg" class="img-fluid rounded-circle">
                                 </div>
                                 <div class="col-md-8">
                                     <div class="card-body">
@@ -166,7 +166,7 @@
                         <div class="card mb-3">
                             <div class="row g-0">
                                 <div class="col-md-4">
-                                    <img src="/images/d2.jpg" class="img-fluid rounded-circle">
+                                    <img src="/images/d2.jpeg" class="img-fluid rounded-circle">
                                 </div>
                                 <div class="col-md-8">
                                     <div class="card-body">
@@ -365,30 +365,32 @@
                 <h1>دورات مشابهة </h1>
             </div>
             <div class="owl-carousel owl-theme">
-            @foreach($courses as $course)
+                @foreach($courses as $course)
 
-                <div class="ms-2">
-                    <div class="card mb-3" >
-                        <div class="row g-0">
-                            <div class="col-md-6">
-                                <img src="{{$course->image}}" class="img-fluid rounded-start">
-                            </div>
-                            <div class="col-md-6">
-                                <div class="card-body">
-                                    <span class="first">{{$course->date}}</span>
-                                    <span class="second">{{$course->department_id}}</span>
-                                    <h4 class="card-title"> {{$course->name}}</h4>
-                                    <h5>{{$course->price}} <span class="last">ر.س</span> </h5>
-                                    <button type="button" class="btn btn-info">عرض معلومات الدورة</button>
-                                    <button type="button" class="btn btn-outline-info"><i class="fas fa-cart-plus"></i></button>
+                    <div class="pic ms-2">
+                        <a href="course/{{$course->id}}"> 
+                            <div class="card mb-3" >
+                                <div class="row g-0">
+                                    <div class="col-md-6">
+                                        <img src="{{$course->image}}" class="img-fluid rounded-start">
+                                    </div>
+                                    <div class="col-md-6">
+                                        <div class="card-body">
+                                            <span class="first">{{$course->date}}</span>
+                                            <span class="second"> {{$course->department_id}}</span>
+                                            <h4 class="card-title">{{$course->name}}</h4>
+                                            <h5>{{$course->price}} <span class="last">ر.س</span> </h5>
+                                            <button type="button" class="btn btn-info a1" href="course/{{$course->id}}"> عرض معلومات الدورة </button>
+                                            <button type="button" class="btn btn-outline-info"><i class="fas fa-cart-plus"></i></button>
 
+                                        </div>
+                                    </div>
                                 </div>
-                            </div>
-                        </div>
-                    </div> 
-                </div>
-                
-            @endforeach
+                            </div> 
+                        </a>
+                    </div>
+                    
+                @endforeach
    
             </div>
         </div>

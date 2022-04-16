@@ -9,4 +9,9 @@ class Team extends Model
 {
     use HasFactory;
     protected $table='doctor';
+
+    public function courses()
+    {
+        return $this->hasMany(Course::class , 'course_id');
+    }
 }

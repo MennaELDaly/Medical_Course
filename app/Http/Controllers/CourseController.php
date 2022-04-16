@@ -77,10 +77,10 @@ class CourseController extends Controller
         //
         $courses =  Course::get();
             //
-            $courses =  Course::find($id);
+            $course =  Course::find($id);
             $teams =  Team::get();
             $accreditations =  Accreditation::get();
-            return view('one_of_courses',compact('courses','courses','teams','accreditations'));
+            return view('one_of_courses',compact('courses','course','teams','accreditations'));
            // dd($courses);
         
     }
