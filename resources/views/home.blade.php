@@ -51,7 +51,7 @@
                         </div>
                     </div>
 
-                    <button type="button" class="btn btn-outline-info" >دخول / حساب جديد</button>
+                   <a href="/login"> <button type="button" class="btn btn-outline-info" >دخول / حساب جديد</button> </a>
                 
                     <nav class="nav">
                         <a class="nav-link" href="#">اتصل بنا</a>
@@ -144,7 +144,7 @@
                 <div id="fslider" class="owl-carousel  owl-theme">
                     @foreach($courses as $course)
                         <div class="ms-2">
-                            <a href="/one_of_courses"> 
+                            <a href="/courses/{{$course->id}}"> 
                                 <div class="card mb-3" >
                                     <div class="row g-0">
                                         <div class="col-md-6">
@@ -153,7 +153,7 @@
                                         <div class="col-md-6">
                                             <div class="card-body">
                                                 <span class="first">{{$course->date}}</span>
-                                                <span class="second"> {{$course->department_id}}</span>
+                                                <span class="second"> {{$course->departmentarbic}}</span>
                                                 <h4 class="card-title">{{$course->name}}</h4>
                                                 <h5>{{$course->price}} <span class="last">ر.س</span> </h5>
                                                 <button type="button" class="btn btn-info a1" href="/one_of_courses"> عرض معلومات الدورة </button>
@@ -185,7 +185,7 @@
                 <h1>إصنع قصة نجاحك</h1>
                 <p> هنالك العديد من الأنواع المتوفرة لنصوص لوريم إيبسوم، ولكن الغالبية تم تعديلها بشكل ما عبر إدخال بعض النوادر أو الكلمات العشوائية إلى النص</p> <br>
                 <p> هنالك العديد من الأنواع المتوفرة لنصوص لوريم إيبسوم، ولكن الغالبية تم تعديلها بشكل ما عبر إدخال بعض النوادر </p> <br>
-                <button type="button" class="btn btn-outline-light">من نحن</button>
+                <a href="/aboutus"> <button type="button" class="btn btn-outline-light"> من نحن </button> </a>
                 <button type="button" class="btn btn-info">دخول / حساب جديد</button>
 
             </div>
@@ -274,7 +274,6 @@
                         </a>
                     </div>
                 @endforeach
-                  
             </div>
         </div>
     </div>

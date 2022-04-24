@@ -31,30 +31,6 @@ class CourseController extends Controller
     {
         //
     }
-/*
-    class CoursesController extends Controller
-    {
-        //
-        public function index()
-        {
-    
-           $courses =  courses::get();
-           return view('eldwrat',compact('courses'));
-        }
-    
-        public function show($id)
-        {
-            $courses =  courses::get();
-            //
-            $course =  courses::find($id);
-            $doctor =  doctor::get();
-            $accreditation =  accreditation::get();
-            return view('orthodontics',compact('courses','course','doctor','accreditation'));
-           // dd($courses);
-        }
-    }
-
-
     /**
      * Store a newly created resource in storage.
      *
@@ -72,6 +48,7 @@ class CourseController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
+    
     public function show($id)
     {
         //

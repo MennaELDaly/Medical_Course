@@ -15,9 +15,8 @@ class CreateDoctorCourseTable extends Migration
     {
         Schema::create('doctor_course', function (Blueprint $table) {
             $table->id();
-            $table->integer('doctor_id');
-            $table->integer('courses_id');
             $table->timestamps();
+
         });
     }
 

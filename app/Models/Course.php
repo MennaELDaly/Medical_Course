@@ -10,8 +10,13 @@ class Course extends Model
     use HasFactory;
     protected $table='courses';
     
-    public function teams()
+    public function Course_DoctorCourse()
     {
-        return $this->hasMany(Team::class , 'team_id');
+        return $this->hasMany(DoctorCourse::class);
+    }
+
+    public function Department()
+    {
+        return $this->belongsTo(Department::class , 'department_id');
     }
 }

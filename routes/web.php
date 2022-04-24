@@ -15,14 +15,17 @@ Route::get('/home',[HomeController::class, 'index']);
 Route::get('/aboutus', function () {
     return view('aboutus');
 });
+Route::get('/login', function () {
+    return view('login');
+});
 
 Route::get('/courses',[CourseController::class, 'index']);
     
 Route::get('/medicalarticles',[BlogController::class, 'index']);
 
-Route::get('/one_of_courses',[onecoursecontroller::class, 'index']);
+
 Route::get('/course/{id}', [CourseController::class, 'show']);
 
 Route::get('/one_of_Articles', [oneblogcontroller::class, 'index']);
 Route::get('/blog/{id}', [BlogController::class, 'show']);
-
+Route::get('/courses/{id}',[coursecontroller::class, 'show']);

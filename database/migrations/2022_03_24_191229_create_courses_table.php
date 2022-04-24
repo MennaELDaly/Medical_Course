@@ -16,8 +16,8 @@ class CreateCoursesTable extends Migration
         Schema::create('courses', function (Blueprint $table) {
             $table->id();
             $table->string('name'); 
-            $table->integer('department_id');
-            $table->integer('doctor_id');
+            $table->unsignedBigInteger('department_id');
+            $table->unsignedBigInteger('doctor_id');
             $table->string('image');
             $table->string('vedio');
             $table->integer('no_of_student');
@@ -29,6 +29,9 @@ class CreateCoursesTable extends Migration
             $table->integer('Accreditation_id');
             $table->string('date');
             $table->timestamps();
+            $table->foreign('department_id')->references('id')->on('department');
+            $table->foreign('doctor_id')->references('id')->on('doctor');
+
         });
     }
 

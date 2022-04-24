@@ -8,7 +8,7 @@ use Illuminate\Database\Eloquent\Model;
 class DoctorCourse extends Model
 {
     use HasFactory;
-    protected $table='doctor';
+    protected $table='data';
     
     public function course()
     {
@@ -16,7 +16,7 @@ class DoctorCourse extends Model
     }
     public function team()
     {
-        return $this->belongsTo(Team::class , 'team_id');
+        return $this->belongsTo(Team::class , 'doctor_id');
     }
 
 }

@@ -9,5 +9,11 @@ class Department extends Model
 {
     use HasFactory;
     protected $table='department';   
+
+    public function Department_Course()
+    {
+        return $this->hasMany(Course::class);
+    }
+
    
 }
