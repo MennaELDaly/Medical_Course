@@ -27,16 +27,16 @@
     <div class =" upper-bar" >
         <div class="container">
             <div class="row">
-                <div class="header col-7">
+                <div class="header col-8 col-md-5 col-lg-7">
                     <div class="search">
                         <a href="#" type="button" class="text-decoration-none" data-bs-toggle="modal" data-bs-target="#exampleModal" data-bs-whatever="@mdo">
                             <i class="fas fa-search"></i>
                         </a>
                         <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-                          <div class="modal-dialog modal-dialog-centered modal-lg">
+                        <div class="modal-dialog modal-dialog-centered modal-lg">
                             <div class="modal-content">
-                              
-                              <div class="modal-body">
+                            
+                            <div class="modal-body">
                                 <div class="search-title">SEARCH</div>
                                 <form role="search" method="get" id="searchform" action="https://wordpresslms.nazil.net/">
                                     <div class="search-wrapper input-group">
@@ -45,28 +45,46 @@
                                     </div>
                                 </form>
                                 
-                              </div>
                             </div>
-                          </div>
+                            </div>
+                        </div>
                         </div>
                     </div>
 
-                   <a href="/login"> <button type="button" class="btn btn-outline-info" >دخول / حساب جديد</button> </a>
-                
-                    <nav class="nav">
-                        <a class="nav-link" href="#">اتصل بنا</a>
-                        <a class="nav-link" href="/medicalarticles">المقالات الطبية </a>
-                        <a class="nav-link" href="/aboutus">من نحن</a>
-                        <a class="nav-link" href="/courses">الدورات</a>
-                        <a class="nav-link active" aria-current="page" href="/home">الرئيسية</a>
+                    <a href="/new"> <button type="button" class="btn btn-outline-info" >دخول / حساب جديد</button> </a>
+                    
+                    <nav class="navbar navbar-expand-lg navbar-light">
+                        <div class="container-fluid">
+                            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+                                <span class="navbar-toggler-icon"></span>
+                            </button>
+                            <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+                                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                                    <li class="nav-item active">
+                                        <a class="nav-link active" aria-current="page" href="/home">الرئيسية</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="/courses">الدورات</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="/aboutus">من نحن</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="/medicalarticles">المقالات الطبية </a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="#">اتصل بنا</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
                     </nav>
                 </div>
-
-                <div class="col-5">
+                <div class="col-4 col-md-7 col-lg-5">
                     <div class="logo">
                         <a href="home.html">
                             <img class="img-responsive logo_transparent_static visible" style="height: 80px;width: 100px;float: right;" src="images/logo.png" alt="الجمعية السعودية للتمريض المهني">
-                            <div style="margin: 17px 20px;float: right;">
+                            <div style="margin: 17px 20px;float: right;" class="logo-text">
                                 <span>الجمعية السعودية للتمريض المهني</span><br>
                                 <em>Saudi Nurses Association</em>
                             </div>
@@ -84,9 +102,9 @@
         <div class="container">
             <div class="row" style="background-image: url('images/6.jpg'); background-size: cover; background-position: top center;position: relative;">
                
-                <div class="slider col-6">
-                    <h1> فريق مدرسين ذو الخبرة<br> 
-                        ومؤهلات عالية لرعاية   لا <br> مثيل لها</h1>
+                <div class="slider col-12 col-md-6 col-lg-6">
+                    <h1> فريق مدرسين ذو الخبرة  
+                        ومؤهلات عالية لرعاية لا مثيل لها</h1>
                     <p> هنالك العديد من الأنواع المتوفرة لنصوص لوريم إيبسوم، ولكن الغالبية تم تعديلها بشكل ما عبر إدخال بعض النوادر أو الكلمات العشوائية إلى النص</p> <br>
                     <button type="button" class="btn btn-outline-light">تسجيل الدخول</button>
                     <button type="button" class="btn btn-info">تصفح الدورات</button>
@@ -100,25 +118,7 @@
     <div class ="landing1" >
         <div class="container">
             <div class="row">
-                <div class="icons col-5">
-                    <div class="col">
-                        <img src="images/i1.png">
-                        <h5>محاضرات مرئية</h5>
-                    </div>
-                    <div class="col">
-                        <img src="images/i2.png">
-                        <h5>متابعة التقدم الدراسي</h5>
-                    </div>
-                    <div class="col">
-                        <img src="images/i3.png">
-                        <h5>محاضرات مباشرة</h5>
-                    </div>
-                    <div class="col">
-                        <img src="images/i4.png">
-                        <h5>شهادات حضور</h5>
-                    </div>
-                </div>
-                <div class="detals col-7">
+            <div class="detals col-lg-7 col-md-7 col-12">
                     <h1> الجمعية السعودية للتمريض المهني</h1>
                     <p> هو ببساطة نص شكلي (بمعنى أن الغاية هي الشكل وليس المحتوى)
                          <span> 
@@ -128,6 +128,26 @@
                          لتكوّن كتيّب بمثابة دليل أو مرجع شكلي لهذه الأحرف
                     </p>
                 </div>
+                <div class="icons col-lg-5 col-md-5 col-12">
+                <div class="col">
+                        <img src="images/i2.png">
+                        <h5>متابعة التقدم الدراسي</h5>
+                    </div>
+                    <div class="col">
+                        <img src="images/i1.png">
+                        <h5>محاضرات مرئية</h5>
+                    </div>
+                    <div class="col">
+                        <img src="images/i4.png">
+                        <h5>شهادات حضور</h5>
+                    </div>
+                    <div class="col">
+                        <img src="images/i3.png">
+                        <h5>محاضرات مباشرة</h5>
+                    </div>
+                    
+                </div>
+                
             </div>
         </div>
     </div>
@@ -135,7 +155,7 @@
     <!-- start slider1--> 
     
     <div class ="slider1" >
-        <div class="container">
+        <div class="col-11">
             <div class="row">
                 <div class="top">
                     <h1>أحدث الدورات</h1>
@@ -144,13 +164,13 @@
                 <div id="fslider" class="owl-carousel  owl-theme">
                     @foreach($courses as $course)
                         <div class="ms-2">
-                            <a href="/courses/{{$course->id}}"> 
+                            <a href="/course/{{$course->id}}"> 
                                 <div class="card mb-3" >
                                     <div class="row g-0">
-                                        <div class="col-md-6">
+                                        <div class="col-md-12 col-sm-12 col-lg-6">
                                             <img src="{{$course->image}}" class="img-fluid rounded-start">
                                         </div>
-                                        <div class="col-md-6">
+                                        <div class="col-md-12 col-sm-12 col-lg-6">
                                             <div class="card-body">
                                                 <span class="first">{{$course->date}}</span>
                                                 <span class="second"> {{$course->departmentarbic}}</span>
@@ -181,7 +201,7 @@
     <div class="container">
         <div class="row" style="background-image: url('images/14.jpg'); background-size: cover; background-position: top center;position: relative;">
            
-            <div class="slider col-6">
+            <div class="slider col-lg-6 offset-lg-6 col-md-6 offset-md-6 col-12">
                 <h1>إصنع قصة نجاحك</h1>
                 <p> هنالك العديد من الأنواع المتوفرة لنصوص لوريم إيبسوم، ولكن الغالبية تم تعديلها بشكل ما عبر إدخال بعض النوادر أو الكلمات العشوائية إلى النص</p> <br>
                 <p> هنالك العديد من الأنواع المتوفرة لنصوص لوريم إيبسوم، ولكن الغالبية تم تعديلها بشكل ما عبر إدخال بعض النوادر </p> <br>
@@ -198,19 +218,19 @@
 <div class ="landing2" >
     <div class="container">
         <div class="row">
-            <div class="col">
+            <div class="col-6 col-lg-3 col-md-3">
                 <h3>2782</h3>
                 <h4> شهادة ممنوحة</h4>
             </div>
-            <div class="col">
+            <div class="col-6 col-lg-3 col-md-3">
                 <h3>3237</h3>
                 <h4>دورة متقدمة </h4>
             </div>
-            <div class="col">
+            <div class="col-6 col-lg-3 col-md-3">
                 <h3>5750</h3>
                 <h4> طالب مبدع</h4>
             </div>
-            <div class="col">
+            <div class="col-6 col-lg-3 col-md-3">
                 <h3>4905</h3>
                 <h4> محاضر متخصص</h4>
             </div>
@@ -231,10 +251,10 @@
                     <div class="ms-2">
                         <div class="card mb-3" >
                             <div class="row g-0">
-                                <div class="col-md-4">
+                                <div class="col-4">
                                     <img src="{{$team->image}}" class="img-fluid rounded-circle">
                                 </div>
-                                <div class="col-md-8">
+                                <div class="col-8">
                                     <div class="card-body">
                                         <span class="first">{{$team->department_id}}</span>
                                         <h5 class="card-title">{{$team->name}}</h5>
@@ -284,36 +304,37 @@
 <div class="poster3">
     <div class="container">
         <div class="row">
-            <div class="col-6">
+        <div class="title col-lg-7 col-md-7 col-12">
+                <h2>ابقي دائما علي اطلاع 
+                    <br>
+                    علي آخر أخبارنا</h2>
+            </div>
+            <div class="login col-lg-5 col-md-5 col-12">
                 <span>اشترك في النشرة الاخبارية</span><br>
                 <div class="email d-flex">
-                    <button type="button" class="btn btn-primary">إشتراك</button>
-                    <input type="email" class="form-control" placeholder="البريد الالكتروني " aria-label="Username" aria-describedby="basic-addon1">
+                    <input type="email" class="form-control col-8" placeholder="البريد الالكتروني " aria-label="Username" aria-describedby="basic-addon1">
+                    <button type="button" class="btn btn-primary col-4">إشتراك</button>
                 </div>
                 <div class="follow-us d-flex">
-                    <ul class="social-icons">
+                    <ul class="social-icons"> 
+                        <li>تابعنا علي</li>
                         <li>
-                            <a href="https://www.instagram.com/add/Saudi_Nurses"><i class="fab fa-instagram"></i></a>
-                        </li>
-                        <li>
-                            <a href="https://web.whatsapp.com/"><i class="fab fa-whatsapp"></i></a>
+                            <a href="https://www.facebook.com/saudinursing"><i class="fab fa-facebook"></i></a>
                         </li>
                         <li>
                             <a href="https://twitter.com/Saudi_Nurses"><i class="fab fa-twitter"></i></a>
                         </li>
                         <li>
-                            <a href="https://www.facebook.com/saudinursing"><i class="fab fa-facebook"></i></a>
+                            <a href="https://web.whatsapp.com/"><i class="fab fa-whatsapp"></i></a>
                         </li>
-                        <li>تابعنا علي</li>
+                        <li>
+                            <a href="https://www.instagram.com/add/Saudi_Nurses"><i class="fab fa-instagram"></i></a>
+                        </li>
                     </ul>
                 </div>
                 
             </div>
-            <div class="title col-6">
-                <h2>ابقي دائما علي اطلاع 
-                    <br>
-                    علي آخر أخبارنا</h2>
-            </div>
+            
         </div>
     </div>
 
@@ -324,34 +345,7 @@
 <div class="footer">
     <div class="container">
         <div class="row">
-            <div class="col-2">
-                <h5>تواصل معنا</h5>
-                <ul class="menu">
-                    <li>Info@domain.com</li>
-                    <li>support@domain.com</li>
-                    <li>Mobile: (+00) 000 000 000</li>
-                    <li>Fax: (+00) 000 000 000</li>
-                </ul>
-            </div>
-            <div class="col-3">
-                <h5>المقالات الطبية </h5>
-                <ul class="menu">
-                    <li>إجراءات للتعافي من كورونا في منزلك</li>
-                    <li>تعرف على أضرار البيوتين</li>
-                    <li>ما هي الفواكه التي ترفع الضغط المنخفض</li>
-                    <li>التهاب غرز الولادة الطبيعية</li>
-                </ul>
-            </div>
-            <div class="col-3">
-                <h5> القائمة الرئيسية  </h5>
-                <ul class="menu">
-                    <li>الرئيسية</li>
-                    <li>من نحن</li>
-                    <li>الدورات</li>
-                    <li>المقالات الطبية</li>
-                </ul>
-            </div>
-            <div class="col-4">
+        <div class="col-md-5 col-lg-4 col-12">
                 <div class="logo d-flex">
                     <a href="https://sna.myevntoo.info/en/homepage">
                         <img class="img-responsive logo_transparent_static visible" style="height: 60px;width: 80px;float: right;" src="https://sna.org.sa/wp-content/uploads/2021/05/logo.png" alt="الجمعية السعودية للتمريض المهني">
@@ -367,6 +361,36 @@
                     <br>
                     العشوائية إلى النص</p> 
             </div>
+            <div class="col-md-2 col-lg-3 col-4">
+                <h5> القائمة الرئيسية  </h5>
+                <ul class="menu">
+                    <li>الرئيسية</li>
+                    <li>من نحن</li>
+                    <li>الدورات</li>
+                    <li>المقالات الطبية</li>
+                </ul>
+            </div>
+            <div class="col-md-3 col-lg-3 col-4">
+                <h5>المقالات الطبية </h5>
+                <ul class="menu">
+                    <li>إجراءات للتعافي من كورونا في منزلك</li>
+                    <li>تعرف على أضرار البيوتين</li>
+                    <li>ما هي الفواكه التي ترفع الضغط المنخفض</li>
+                    <li>التهاب غرز الولادة الطبيعية</li>
+                </ul>
+            </div>
+            <div class="col-md-2 col-lg-2 col-4 mobile">
+                <h5>تواصل معنا</h5>
+                <ul class="menu">
+                    <li>Info@domain.com</li>
+                    <li>support@domain.com</li>
+                    <li>Mobile: (+00) 000 000 000</li>
+                    <li>Fax: (+00) 000 000 000</li>
+                </ul>
+            </div>
+            
+            
+            
         </div>
     </div>
 </div>
@@ -379,20 +403,22 @@
             <div class="line">
                     <li class="my-3 mx-4 border-top"></li>
             </div>
-            <div class="text d-flex">
-                <div class="col-8 first">
+            <div class="text  row">
+            <div class="col-lg-2 col-md-3 col-6 last">
+                    سياسة الخصوصية
+                </div> 
+                <div class="col-lg-2 col-md-2 col-6  second">
+                    الشروط والاحكام
+                </div>
+                <div class="col-lg-8 col-md-7 col-12 first">
                     جميع الحقوق محفوظة
                     <span>
                         للجمعيه السعودية للتمريض المهني
                     </span>
                     © 2021
                 </div> 
-                <div class="col-2  second">
-                    الشروط والاحكام
-                </div>                    
-                <div class="col-2 last">
-                    سياسة الخصوصية
-                </div>                    
+                                    
+                                   
             
             </div>
         </div>

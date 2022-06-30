@@ -21,8 +21,8 @@ a:hover{
     padding-bottom: 15px;
     background-color: #f6fafe;
 }
-.upper-bar .header , .upper-bar .col-5{
-    padding: 0px;
+.upper-bar .burger{
+    background-color: #00b1da;
 }
 .upper-bar .header .search{
     display: inline-block;
@@ -80,15 +80,18 @@ a:hover{
     background-color: #00b1da;
     color: white;
    }
-.upper-bar .header .nav .nav-link{
+.upper-bar .header .navbar .nav-link{
     color: #000000;
     padding: 15px 25px 0px 0px;
     font-weight: 500;
     font-size: 14px;
 }
-.upper-bar .header .nav .nav-link.active , .upper-bar .header .nav .nav-link:hover{
+.upper-bar .header .navbar .nav-link.active , .upper-bar .header .navbar .nav-link:hover{
     color: #25bbdf;
-    
+}
+
+.upper-bar .header .navbar .container-fluid{
+    padding: 0px;
 }
 .upper-bar .logo a em {
     color: #777;
@@ -164,6 +167,7 @@ a:hover{
     background-color: #081839;
     color: white;
     padding-top: 160px;
+    direction: rtl;
 }
 
 .landing1 .icons .col {
@@ -183,7 +187,7 @@ a:hover{
 
 .landing1 .detals {
     padding-top: 40px;
-    text-align: end;
+    text-align: right;
     padding-right: 80px;
 }
 .landing1 .detals h1 {
@@ -199,6 +203,7 @@ a:hover{
     padding-top: 20px;
     font-weight: 500;
     line-height: 2;
+    text-align: justify;
 }
 
   /* start slider1 */
@@ -238,14 +243,12 @@ a:hover{
     border-radius: 0px;
 }
 
-.slider1 .owl-carousel .owl-stage-outer{
+/* .slider1 .owl-carousel .owl-stage-outer{
     width: 3496px;
     height: 57vh;
-}
+} */
 
-.slider1 .owl-item.active{
-    width: 580px!important;
-}
+
 
 .slider1 .card-body {
     padding-right: 25px;
@@ -337,9 +340,6 @@ a:hover{
     display: none;
 }
 
-.slider1 .owl-carousel .owl-item img{
-    height: 405px;
-}
 .slider1 .owl-stage{
     width:max-content!important;
 }
@@ -369,7 +369,6 @@ a:hover{
     padding-bottom: 90px;
     color:#d0d6dd ;
     text-align: end;
-    margin-left: 50%;
 }
 .poster2 .slider h1 {
     color:black;
@@ -625,6 +624,7 @@ a:hover{
 .poster3{
     height: 15vh;
     position: relative;
+    direction: rtl;
 }
  
  .poster3 .container{
@@ -635,13 +635,11 @@ a:hover{
     background-color: #00b1da;
     color: white;
 }
-.poster3 .col-6 {
-    padding: 40px 35px 20px;
+.poster3 .login {
+    padding: 40px 5px 20px;
 }
-.poster3 .col-5 {
+.poster3 .title {
     padding: 40px 35px 20px;
-}
- .poster3 .title{
     float: right;
 }
  .poster3 h2{
@@ -653,7 +651,6 @@ a:hover{
 
  .poster3 span{
     float: right;
-    padding-right: 75px;
     font-size: 13px;
 }
  .poster3 .email{
@@ -690,7 +687,8 @@ a:hover{
 }
  .poster3 ul{
     margin-top: 30px;
-    padding-left: 12.5rem;
+    padding-left: 10rem;
+    padding-right: 0px;
 }
  .poster3 li{
     display: inline-flex;
@@ -709,6 +707,7 @@ a:hover{
     background-color: #081839;
     color: #c6d1d5;
     padding-top: 20vh;
+    direction: rtl;
 }
 
 .footer .container {
@@ -755,7 +754,7 @@ ul{
 
 .copyright{
     background-color: #081839;
-
+    direction: rtl;
 }
 
 .copyright .border-top {
@@ -787,10 +786,10 @@ ul{
 
     /* start upper-bar */
 
-.upper-bar .first-bar .header .nav .nav-link{
+.upper-bar .first-bar .header .navbar .nav-link{
     color: white;
 }
-.upper-bar .first-bar .header .nav .nav-link.active , .upper-bar .first-bar .header .nav .nav-link:hover{
+.upper-bar .first-bar .header .navbar .nav-link.active , .upper-bar .first-bar .header .navbar .nav-link:hover{
     color: #25bbdf;
 }
 .upper-bar .first-bar .logo .title {
@@ -1480,4 +1479,399 @@ ul{
 }     
 .slidermedical .card-content .card img{
  height: 65vh;
+}
+/* On screens that are 992px or less, set the background color to blue */
+                    /* Laptop */
+@media screen and (max-width: 992px) {
+    
+    .slider1 .owl-item{
+        width: 300px!important;
+    }
+    .slider1 .owl-carousel .owl-item img{
+        height: 280px;
+    }
+   
+  }
+  @media screen and (min-width: 992px) {
+    .slider1 .owl-carousel .owl-item img{
+        height: 405px;
+    }
+    .slider1 .owl-item.active{
+        width: 580px!important;
+    }
+    .upper-bar .navbar-collapse{
+        direction: rtl;
+       }
+    .poster1 .slider h1 {
+        padding-left: 40px
+    }
+
+
+  }
+  
+                      /* Tablet */
+
+  @media screen and (max-width: 768px) {
+      .first-bar{
+        padding-left: 0px;
+        padding-right: 0px;
+      }
+      
+      .poster3 .container , .footer .container , .poster2 .container , .sliderteam .container , .slidermedical .container{ 
+          padding: 0px;
+      }
+      .textbox3 img ,.textbox img {
+          width: 100%;
+      }
+      .poster1 {
+        height: 48vh;
+      }
+      .poster1 .slider {
+        padding-left: 27px;
+        padding-right: 30px;
+        padding-top: 50px;
+        padding-bottom: 45px;
+      }
+      .poster1 .slider h1 {
+        font-size: 25px;
+      }
+      .poster1 .slider p {
+        float: right;
+        font-size: 15px;
+        padding-top: 15px;
+        padding-bottom: 15px;
+    }
+    .poster1 .slider .btn-info {
+        margin-left: 10px;
+    }
+    .landing1 {
+        padding-top: 85px;
+    }
+    .landing1 .detals {
+        padding-top: 25px;
+        padding-right: 22px;
+    }
+    .landing1 .detals h1 {
+        font-size: 20px;
+    }
+    .landing1 .detals p {
+        font-size: 12px;
+    }
+    .landing1 .icons h5 {
+        font-size: 12px;
+        padding-top: 15px;
+    }
+    .landing1 .icons .col {
+        padding-bottom: 30px;
+    }
+    .landing1 .icons img {
+        height: 55px;
+    }
+    .slider1 .top {
+        padding-top: 40px;
+        padding-bottom: 30px;
+    }
+    .slider1 .top h1 {
+        font-size: 35px;
+    }
+    .slider1 .top a {
+        padding-left: 70px;
+        padding-top: 15px;
+        font-size: 14px;
+    }
+    .slider1 .col-11 {
+        width: 96.666667%;
+    }
+    .poster2 {
+        height: 48vh;
+    }
+    .poster2 .slider {
+        padding-left: 20px;
+        padding-right: 30px;
+        padding-top: 50px;
+        padding-bottom: 50px;
+    }
+    .poster2 .slider h1 {
+        font-size: 35px;
+    }
+    .poster2 .slider p {
+        font-size: 14px;
+    }
+    .landing2 {
+        padding-top: 125px;
+        padding-bottom: 45px;
+    }
+    .landing2 h3 {
+        font-size: 35px;
+    }
+    .landing2 h4 {
+        font-size: 17px;
+    }
+    .slider1 .card-body .first {
+        padding-top: 0px;
+        padding-bottom: 10px;
+        font-size: 13px;
+    }
+    .slider1 .card-body .card-title {
+        font-size: 16px;
+        padding-bottom: 10px;
+    }
+    .slider1 .card-body h5 {
+        font-size: 18px;
+        padding-bottom: 15px;
+    }
+    .slider1 .card-body .btn {
+        margin-bottom: 15px;
+    }
+    .sliderteam .top {
+        padding-top: 40px;
+        padding-bottom: 40px;
+    }
+    .sliderteam .top h1 {
+        font-size: 35px;
+    }
+    .slidermedical .top h1 {
+        font-size: 35px;
+    }
+    .slidermedical .card-img-overlay {
+        padding-right: 15px;
+        padding-left: 12px;
+    }
+    .card-img-overlay {
+        padding:0rem;
+    }
+    .slidermedical .owl-theme .owl-dots {
+        padding-bottom: 45px;
+        padding-top: 30px;
+    }
+
+    .poster3 .login {
+        padding: 40px 5px 5px;
+    }
+    .poster3 .col-6 {
+        padding: 30px 30px 5px;
+    }
+    .poster3 span {
+        padding-right: 0px;
+        font-size: 13px;
+    }
+    .poster3 ul {
+        margin-top: 20px;
+        padding-left: 1.5rem;
+    }
+    .poster3 h2 {
+        font-size: 35px;
+    }
+    .footer {
+        padding-top: 17vh;
+    }
+    .footer .mobile{
+        padding-left: 5px;
+    }
+    .footer h5 {
+        padding-bottom: 10px;
+        font-size: 13px;
+    }
+    .footer ul {
+        padding: 0px;
+        font-size: 9px;
+    }
+    .footer .logo .title {
+        margin: 6px 7px 20px;
+        font-size: 11px;
+    }
+    .footer .logo .img{
+        height: 55px;
+        width: 75px;
+    }
+    .footer p {
+        font-size: 10px;
+    }
+    .copyright .text {
+        font-size: 10px;
+    }
+                            /* about page  */
+    .textbox {       
+        padding-bottom: 3vh;
+    } 
+    .textbox .text h1 {
+        font-size: 30px;
+    }                      
+
+    .textbox .text p {
+        padding-left: 0px;
+        font-size: 14px;
+        float: right;
+        direction: rtl;
+        text-align: justify;
+    }
+    .textbox .text {
+        padding-top: 0vh;
+        padding-bottom: 0vh;
+    }
+    .textbox2 {
+        padding-bottom: 6vh;
+    }
+    .textbox2 h1 {
+        padding-top: 6vh;
+        padding-bottom: 3vh;
+        font-size: 35px;
+    }
+    .textbox2 h3 {
+        font-size: 35px;
+    }
+    .textbox2 h4 {
+        font-size: 17px;
+    }
+    .textbox3 {
+        padding-top: 5vh;
+        padding-bottom: 5vh;
+    }
+    .textbox3 .text {
+        text-align: right;
+        padding-top: 0vh;
+        padding-bottom: 0vh;
+        padding-right: 10px;
+    }
+    .textbox3 .text h1 {
+        font-size: 28px;
+        line-height: 1.5;
+        direction: rtl;
+    }
+    .textbox3 .text p {
+        padding-left: 0px;
+        font-size: 16px;
+        line-height: 1.5;
+        text-align: justify;
+        direction: rtl;
+        margin-bottom: 10px;
+    }
+    .textbox3 ul {
+        direction: rtl;
+        padding: 0px;
+        font-size: 16px;
+        line-height: 1.5;
+        text-align: justify;
+    }
+    .textbox3 ul i {
+        padding-left: 0px;
+        font-size: 15px;
+    }
+}
+
+  @media screen and (min-width: 768px) {
+    .upper-bar .header {
+        padding: 0px;
+    }
+}
+
+
+                        /* mobil */
+
+    @media screen and (max-width: 767px) {
+        .logo-text {
+            display: none;
+           }
+           
+    }
+    @media screen and (max-width: 425px) {
+        .poster1 {
+            height: 44vh;
+        }
+        .landing1 {
+            padding-top: 50px;
+            padding-bottom: 10px;
+        }
+        .landing1 .detals p {
+            font-size: 13px;
+            padding-left: 22px;
+        }
+        .landing1 .detals {
+            padding-top: 5px;
+            padding-right: 15px;
+        }
+        .slider1 .top {
+            padding-top: 35px;
+            padding-bottom: 30px;
+        }
+        .slider1 .top a {
+            padding-left: 20px;
+            padding-top: 5px;
+        }
+        .slider1 .top h1 {
+            font-size: 25px;
+        }
+        .slider1 .owl-theme .owl-dots {
+            padding-bottom: 25px;
+        }
+        .landing2 {
+            padding-top: 35px;
+            padding-bottom: 30px;
+        }
+        .landing2 .container {
+            padding-right: 50px;
+            padding-left: 55px;
+            text-align: center;
+        }
+        .landing2 h4 {
+            padding-bottom: 15px;
+        }
+        .poster2 .slider {
+            padding-left: 20px;
+            padding-right: 30px;
+            padding-top: 30px;
+            padding-bottom: 27px;
+        }
+        .poster2 .slider h1 {
+            font-size: 25px;
+        }
+        .poster2 {
+            height: auto;
+        }
+        .sliderteam .top h1 {
+            font-size: 25px;
+        }
+        .slidermedical .top h1 {
+            font-size: 25px;
+        }
+        .slidermedical .top {
+            padding-bottom: 60px;
+            padding-top: 25px;
+        }
+        .slidermedical .top a {
+            padding-top: 5px;
+            padding-left: 20px;
+        }
+        .poster3{
+            height: auto;
+        }
+        .footer {
+            padding-top: 25px;
+        }
+       
+        .footer .row{
+            --bs-gutter-y: 0;
+            display: flex;
+            flex-wrap: wrap;
+            margin-right: calc(var(--bs-gutter-x)* 0 ) !important;
+        }
+        .footer p {
+            font-size: 11px;
+        }
+        .copyright .line {
+            padding-left: 15px;
+            padding-right: 15px;
+            height: 30px;
+            margin-top: -16px;
+        }
+        .copyright .text {
+            font-size: 11px;
+            padding-right: 40px;
+            padding-left: 40px;
+            padding-bottom: 20px;
+            line-height: 2;
+        }
+        .copyright .text .first {
+            padding: 0px;
+        }
 }

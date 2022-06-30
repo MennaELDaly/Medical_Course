@@ -27,7 +27,7 @@
         <div class="first-bar">
             <div class="container">
                 <div class="row">
-                    <div class="header col-7">
+                    <div class="header col-8 col-md-5 col-lg-7">
                         <div class="search">
                             <a href="#" type="button" class="text-decoration-none" data-bs-toggle="modal" data-bs-target="#exampleModal" data-bs-whatever="@mdo">
                                 <i class="fas fa-search"></i>
@@ -53,16 +53,35 @@
                         
                         <button type="button" class="btn btn-outline-info">دخول / حساب جديد</button>
                     
-                        <nav class="nav">
-                            <a class="nav-link" href="#">اتصل بنا</a>
-                            <a class="nav-link active" aria-current="page" href="/medicalarticles">المقالات الطبية </a>
-                            <a class="nav-link" href="/aboutus">من نحن</a>
-                            <a class="nav-link" href="/courses">الدورات</a>
-                            <a class="nav-link" href="/home">الرئيسية</a>
+                        <nav class="navbar navbar-expand-lg navbar-light">
+                            <div class="container-fluid">
+                                <button class="navbar-toggler burger" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+                                    <span class="navbar-toggler-icon"></span>
+                                </button>
+                                <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+                                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                                        <li class="nav-item active">
+                                            <a class="nav-link" href="/home">الرئيسية</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link" href="/courses">الدورات</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link" href="/aboutus">من نحن</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link active" aria-current="page" href="/medicalarticles">المقالات الطبية </a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link" href="#">اتصل بنا</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
                         </nav>
                     </div>
 
-                    <div class="col-5">
+                    <div class="col-4 col-md-7 col-lg-5">
                         <div class="logo">
                             <a href="home.html">
                                 <img class="img-responsive logo_transparent_static visible" style="height: 80px;width: 100px;float: right;" src="images/logo.png" alt="الجمعية السعودية للتمريض المهني">
@@ -131,75 +150,50 @@
 
     <!-- start poster3  -->
 
-    <div class="poster3">
-            <div class="container">
-                <div class="row">
-                    <div class="col-6">
-                        <span>اشترك في النشرة الاخبارية</span><br>
-                        <div class="email d-flex">
-                            <button type="button" class="btn btn-primary">إشتراك</button>
-                            <input type="email" class="form-control" placeholder="البريد الالكتروني " aria-label="Username" aria-describedby="basic-addon1">
-                        </div>
-                        <div class="follow-us d-flex">
-                            <ul class="social-icons">
-                                <li>
-                                    <a href="https://www.instagram.com/add/Saudi_Nurses"><i class="fab fa-instagram"></i></a>
-                                </li>
-                                <li>
-                                    <a href="https://web.whatsapp.com/"><i class="fab fa-whatsapp"></i></a>
-                                </li>
-                                <li>
-                                    <a href="https://twitter.com/Saudi_Nurses"><i class="fab fa-twitter"></i></a>
-                                </li>
-                                <li>
-                                    <a href="https://www.facebook.com/saudinursing"><i class="fab fa-facebook"></i></a>
-                                </li>
-                                <li>تابعنا علي</li>
-                            </ul>
-                        </div>
-                        
-                    </div>
-                    <div class="title col-6">
-                        <h2>ابقي دائما علي اطلاع 
-                            <br>
-                            علي آخر أخبارنا</h2>
-                    </div>
+    <div class="poster3" style="background-color: #f6fafe;">
+        <div class="container">
+            <div class="row">
+            <div class="title col-lg-7 col-md-7 col-12">
+                    <h2>ابقي دائما علي اطلاع 
+                        <br>
+                        علي آخر أخبارنا</h2>
                 </div>
+                <div class="login col-lg-5 col-md-5 col-12">
+                    <span>اشترك في النشرة الاخبارية</span><br>
+                    <div class="email d-flex">
+                        <input type="email" class="form-control col-8" placeholder="البريد الالكتروني " aria-label="Username" aria-describedby="basic-addon1">
+                        <button type="button" class="btn btn-primary col-4">إشتراك</button>
+                    </div>
+                    <div class="follow-us d-flex">
+                        <ul class="social-icons"> 
+                            <li>تابعنا علي</li>
+                            <li>
+                                <a href="https://www.facebook.com/saudinursing"><i class="fab fa-facebook"></i></a>
+                            </li>
+                            <li>
+                                <a href="https://twitter.com/Saudi_Nurses"><i class="fab fa-twitter"></i></a>
+                            </li>
+                            <li>
+                                <a href="https://web.whatsapp.com/"><i class="fab fa-whatsapp"></i></a>
+                            </li>
+                            <li>
+                                <a href="https://www.instagram.com/add/Saudi_Nurses"><i class="fab fa-instagram"></i></a>
+                            </li>
+                        </ul>
+                    </div>
+                    
+                </div>
+                
             </div>
+        </div>
     </div>
+
     <!-- start footer  -->
 
     <div class="footer">
         <div class="container">
             <div class="row">
-                <div class="col-2">
-                    <h5>تواصل معنا</h5>
-                    <ul class="menu">
-                        <li>Info@domain.com</li>
-                        <li>support@domain.com</li>
-                        <li>Mobile: (+00) 000 000 000</li>
-                        <li>Fax: (+00) 000 000 000</li>
-                    </ul>
-                </div>
-                <div class="col-3">
-                    <h5>المقالات الطبية </h5>
-                    <ul class="menu">
-                        <li>إجراءات للتعافي من كورونا في منزلك</li>
-                        <li>تعرف على أضرار البيوتين</li>
-                        <li>ما هي الفواكه التي ترفع الضغط المنخفض</li>
-                        <li>التهاب غرز الولادة الطبيعية</li>
-                    </ul>
-                </div>
-                <div class="col-3">
-                    <h5> القائمة الرئيسية  </h5>
-                    <ul class="menu">
-                        <li>الرئيسية</li>
-                        <li>من نحن</li>
-                        <li>الدورات</li>
-                        <li>المقالات الطبية</li>
-                    </ul>
-                </div>
-                <div class="col-4">
+            <div class="col-md-5 col-lg-4 col-12">
                     <div class="logo d-flex">
                         <a href="https://sna.myevntoo.info/en/homepage">
                             <img class="img-responsive logo_transparent_static visible" style="height: 60px;width: 80px;float: right;" src="https://sna.org.sa/wp-content/uploads/2021/05/logo.png" alt="الجمعية السعودية للتمريض المهني">
@@ -215,6 +209,36 @@
                         <br>
                         العشوائية إلى النص</p> 
                 </div>
+                <div class="col-md-2 col-lg-3 col-4">
+                    <h5> القائمة الرئيسية  </h5>
+                    <ul class="menu">
+                        <li>الرئيسية</li>
+                        <li>من نحن</li>
+                        <li>الدورات</li>
+                        <li>المقالات الطبية</li>
+                    </ul>
+                </div>
+                <div class="col-md-3 col-lg-3 col-4">
+                    <h5>المقالات الطبية </h5>
+                    <ul class="menu">
+                        <li>إجراءات للتعافي من كورونا في منزلك</li>
+                        <li>تعرف على أضرار البيوتين</li>
+                        <li>ما هي الفواكه التي ترفع الضغط المنخفض</li>
+                        <li>التهاب غرز الولادة الطبيعية</li>
+                    </ul>
+                </div>
+                <div class="col-md-2 col-lg-2 col-4 mobile">
+                    <h5>تواصل معنا</h5>
+                    <ul class="menu">
+                        <li>Info@domain.com</li>
+                        <li>support@domain.com</li>
+                        <li>Mobile: (+00) 000 000 000</li>
+                        <li>Fax: (+00) 000 000 000</li>
+                    </ul>
+                </div>
+                
+                
+                
             </div>
         </div>
     </div>
@@ -227,21 +251,20 @@
                 <div class="line">
                         <li class="my-3 mx-4 border-top"></li>
                 </div>
-                <div class="text d-flex">
-                    <div class="col-8 first">
+                <div class="text  row">
+                <div class="col-lg-2 col-md-3 col-6 last">
+                        سياسة الخصوصية
+                    </div> 
+                    <div class="col-lg-2 col-md-2 col-6  second">
+                        الشروط والاحكام
+                    </div>
+                    <div class="col-lg-8 col-md-7 col-12 first">
                         جميع الحقوق محفوظة
                         <span>
                             للجمعيه السعودية للتمريض المهني
                         </span>
                         © 2021
                     </div> 
-                    <div class="col-2 second">
-                        الشروط والاحكام
-                    </div>                    
-                    <div class="col-2 last">
-                        سياسة الخصوصية
-                    </div>                    
-                
                 </div>
             </div>
         </div>
